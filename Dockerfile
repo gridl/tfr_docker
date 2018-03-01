@@ -53,7 +53,7 @@ RUN R -e "install.packages('tidyverse', repos = 'https://cloud.r-project.org')"
 #RUN nvidia-smi -f /tmp/temp.txt
 
 # COPY -> to copy files/data from to localmachine
-COPY notebooks /notebooks
+# COPY notebooks /notebooks
 
 # TensorBoard
 EXPOSE 6006
@@ -61,7 +61,7 @@ EXPOSE 6006
 EXPOSE 8888
 
 WORKDIR "/notebooks"
-COPY notebooks /notebooks
+# COPY notebooks /notebooks
 
 
 COPY run_jupyter_2.sh /
