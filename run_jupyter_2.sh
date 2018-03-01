@@ -14,6 +14,7 @@
 # limitations under the License.
 # ==============================================================================
 
+git clone https://github.com/tensorchiefs/dl_course_2018
 # To enable widget such as sliders
 jupyter nbextension enable --py --sys-prefix widgetsnbextension 
 jupyter-nbextensions_configurator enable #Allows the user to config notebooks
