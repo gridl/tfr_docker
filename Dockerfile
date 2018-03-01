@@ -46,7 +46,7 @@ RUN apt-get clean && \
 rm -rf /var/lib/apt/lists/*
 
 # Some nice stuff for R
-# RUN R -e "install.packages('tidyverse', repos = 'https://cloud.r-project.org')"
+RUN R -e "install.packages('tidyverse', repos = 'https://cloud.r-project.org')"
 
 # Default directory that will be saved by htcondor
 #RUN mkdir /tmp/results
